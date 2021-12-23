@@ -1,9 +1,9 @@
 import requests
 import json
 from datetime import date, timedelta
-from last_date import last_date
+from Covid_API import last_date
 import time
-
+from Plot_Data import x_values_list
 
 url = "https://covid-19-data.p.rapidapi.com/report/country/code"
 
@@ -28,3 +28,11 @@ headers = {
 
 # print(last_date(data))
 
+#print(x_values_list)
+
+dates = []
+
+for x in range(0,140,20):
+    dates.append(x_values_list[x])
+
+print(dates)
