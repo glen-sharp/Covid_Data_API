@@ -2,7 +2,6 @@ import requests
 import json
 from datetime import date, timedelta
 import time
-from last_date import last_date
 
 url = "https://covid-19-data.p.rapidapi.com/report/country/code"
 
@@ -12,6 +11,13 @@ headers = {
     'x-rapidapi-host': "covid-19-data.p.rapidapi.com",
     'x-rapidapi-key': "f8542a8d8amsh53557ef9a891d92p1f5fadjsn2d0f8c255ba5"
     }
+
+
+def last_date(x:dict):
+    last = str(list(x)[-1])
+    date_split = last.split("-")
+    return date_split
+
 
 def add_data():
 
