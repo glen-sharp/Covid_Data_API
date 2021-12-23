@@ -30,9 +30,9 @@ headers = {
 
 #print(x_values_list)
 
-dates = []
+# dates = []
 
-for x in range(0,140,20):
-    dates.append(x_values_list[x])
+# for x in range(0,140,20):
+#     dates.append(x_values_list[x])
 
-print(dates)
+# print(dates)
