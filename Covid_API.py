@@ -45,11 +45,10 @@ def add_data():
         itt = itt + 1
         time.sleep(2)
 
-    print(deaths)
-
     data.update(deaths)
 
-    print(data)
+    if __name__ == "__main__":
+        print(data)
 
     with open('Covid_Data.txt', 'w') as file:
         file.write(json.dumps(data))
