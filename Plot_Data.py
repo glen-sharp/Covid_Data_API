@@ -1,7 +1,9 @@
 import json
 import matplotlib.pyplot as plt
+from matplotlib import rcParams
 from Covid_API import add_data
 
+rcParams.update({'figure.autolayout': True})
 
 add_data()
 
